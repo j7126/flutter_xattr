@@ -23,6 +23,7 @@ FFI_PLUGIN_EXPORT char *get_attribute(char *path, char *attribute)
         free(attributeValue);
         return "";
     }
+    attributeValue[expectedSize] = '\0';
     return attributeValue;
 }
 
