@@ -1,3 +1,5 @@
+#ifdef linux
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -30,3 +32,5 @@ void free_string(char *str)
     // Free native memory in C which was allocated in C.
     free(str);
 }
+
+#endif
